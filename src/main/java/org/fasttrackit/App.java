@@ -7,7 +7,7 @@ public class App
 
 
          Car carReference = new Car();
-         carReference.name ="ferrari";
+         carReference.name = "ferrari";
          carReference.maxSpeed = 300;
          carReference.fuellevel = 60;
          carReference.mileage = 12.5;
@@ -15,6 +15,21 @@ public class App
          carReference.damaged = true;
          carReference.doorCount = 1;
          carReference.color = "red";
+
+         Engine engine1 = new Engine();
+         engine1.manufactured = "Ferrari";
+         engine1.capacity = 3000;
+
+         carReference.engine = engine1;
+
+
+        System.out.println("Engine1 capacity:" + engine1.capacity  );
+        System.out.println("Car engine capacity: "+ carReference.engine.capacity);
+
+        engine1.capacity = 4000;
+
+        System.out.println("Car engine capacity after update: "+ carReference.engine.capacity);
+
 
          //concatamation
         System.out.println("Proprietes of car" + carReference.name);
@@ -31,6 +46,11 @@ public class App
         car2.name = "renault";
         car2.fuellevel = 70;
         car2.totalTravelDistance = 100;
+
+        car2.engine = new Engine();
+        car2.engine.capacity = 2000;
+
+
         System.out.println("Propreites of car" + car2.name);
         System.out.println("max speed" +car2.maxSpeed);
         System.out.println("Milleage" + car2.mileage);

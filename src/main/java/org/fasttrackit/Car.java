@@ -16,6 +16,11 @@ public class Car {
     String color;
 
 
+    //has a relantioship (agregation)
+    Engine engine;
+
+
+
 
 
 
