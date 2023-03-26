@@ -1,23 +1,16 @@
 package org.fasttrackit;
 
-public class Car {
 
-    //instance variables
-    String name= "test";
-    double fuellevel;
-    double mileage;
-    double totalTravelDistance;
-    double maxSpeed;
+// "is-a" relantionship (inheritance)
+public class Car extends autovehicle{
+
+
+
 
     Double testdouble;
     int doorCount;
-    boolean damaged;
-
-    String color;
 
 
-    //has a relantioship (agregation)
-    Engine engine;
 
 
 

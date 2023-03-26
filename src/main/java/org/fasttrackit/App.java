@@ -20,6 +20,8 @@ public class App
          engine1.manufactured = "Ferrari";
          engine1.capacity = 3000;
 
+        System.out.println(carReference);
+
          carReference.engine = engine1;
 
 
